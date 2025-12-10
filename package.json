@@ -1,0 +1,29 @@
+{
+  "name": "backend3-tp1",
+  "version": "1.0.0",
+  "description": "Entrega N°1 - Backend III: Testing y Escalabilidad Backend",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "Marcos Corbalan",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^9.0.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.12.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3"
+  }
+}
