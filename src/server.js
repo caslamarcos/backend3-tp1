@@ -1,4 +1,6 @@
 // src/server.js
+import swaggerUi from 'swagger-ui-express';
+import { swaggerSpec } from './config/swagger.js';
 import express from 'express';
 import dotenv from 'dotenv';
 import { connectDB } from './config/db.js';
@@ -16,6 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Rutas
+app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use('/api/mocks', mocksRouter);
 app.use('/api/users', usersRouter);
 app.use('/api/pets', petsRouter);
